@@ -1,0 +1,21 @@
+.side_menu {
+    max-width: 290px;
+    position: fixed;
+    left: 50%;
+    top: 84px;
+    transform: translateX(calc(-50% + 322px));
+    display: none;
+    flex-direction: column;
+}
+
+.side_menu_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 1024px) {
+    .side_menu {
+        display: flex;
+    }
+}
