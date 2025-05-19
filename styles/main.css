@@ -44,7 +44,7 @@
     gap: 8px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 620px) {
     .content_container {
         padding: 30px 0 24px;
     }
@@ -63,6 +63,12 @@
     .post {
         border: 1px solid #DBDBDB;
         border-radius: 4px;
+    }
+    .post_footer {
+        padding: 4px 8px 12px;
+    }
+    .post_date_time {
+        margin-top: 6px;
     }
 }
 
@@ -132,4 +138,142 @@
 
 .stories_content::-webkit-scrollbar {
     display: none;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.post_header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.post_profile {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.post_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.post_user {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.post_user:hover {
+    text-decoration: underline;
+}
+
+.post_more_options {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.post_content {
+    display: flex;
+    position: relative;
+}
+
+.post_medias {
+    display: flex;
+    overflow-y: hidden ;
+    overflow-x: auto;
+
+    width: 100%;
+}
+
+.post_footer {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 4px;
+}
+
+.post_buttons {
+    display: flex;
+    position: relative;
+}
+
+.post_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 8px;
+}
+
+.post_button_align_right {
+    margin-left: auto;
+}
+
+.post_infos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    gap: 10px;
+}
+
+.post_likes,
+.post_description {
+    display: flex;
+}
+
+.post_likes {
+    align-items: center;
+    gap: 6px;
+}
+
+.post_likes_avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.post_likes span,
+.post_description span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.post_likes a,
+.post_description a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    text-decoration: none;
+}
+
+.post_name_underline:hover {
+    text-decoration: underline;
+}
+
+.post_date_time {
+    font-size: 10px;
+    font-weight: 400;
+    color: #999999;
+    text-transform: uppercase;
 }
