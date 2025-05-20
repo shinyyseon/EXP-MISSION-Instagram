@@ -1,11 +1,10 @@
 .side_menu {
     max-width: 290px;
-    position: fixed;
-    left: 50%;
-    top: 84px;
-    transform: translateX(calc(-50% + 322px));
+    width: 100%;
+    margin-left: 32px;
     display: none;
     flex-direction: column;
+    position: relative;
 }
 
 .side_menu_user_profile {
@@ -184,8 +183,54 @@
     text-transform: uppercase;
 }
 
-@media (min-width: 1024px) {
-    .side_menu {
-        display: flex;
-    }
+.left_sidebar {
+    margin-top: 35px;
+    width: 240px;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.left_sidebar_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.left_sidebar_nav a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #262626;
+    margin-left: 14px;
+}
+
+.left_sidebar_nav a span {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.left_sidebar_nav a:hover {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.left_sidebar_nav img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar_logo {
+    height: 60px;
+    align-items: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.sidebar_logo img {
+    margin-right: 16px;
 }

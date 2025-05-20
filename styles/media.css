@@ -1,0 +1,107 @@
+/* === 1. screen >= 1264px === */
+@media (min-width: 1264px) {
+    .left_sidebar {
+        display: flex;
+        width: 240px;
+    }
+
+    .left_sidebar_nav a span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 140px;
+    }
+
+    .side_menu {
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        position: sticky;
+        top: 84px;
+        margin-left: 32px;
+        flex-shrink: 0;
+    }
+
+    .content_container {
+        margin-left: 240px;
+    }
+    .header {
+        display: none;
+    }
+
+    .main_container {
+        margin-top: 0;
+    }
+}
+
+/* === 2. 1024px <= screen < 1264px === */
+@media (min-width: 1024px) and (max-width: 1263px) {
+    .left_sidebar {
+        display: flex;
+        width: 72px;
+    }
+
+    .left_sidebar_nav a span {
+        display: none;
+    }
+
+    .side_menu {
+        display: flex;
+    }
+
+    .content_container {
+        margin-left: 72px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .main_container {
+        margin-top: 0;
+    }
+}
+
+/* === 3. 768px <= screen < 1024px === */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .left_sidebar {
+        display: flex;
+        width: 72px;
+    }
+
+    .left_sidebar_nav a span {
+        display: none;
+    }
+
+    .side_menu {
+        display: none;
+    }
+
+    .content_container {
+        margin-left: 72px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .main_container {
+        margin-top: 0;
+    }
+}
+
+/* === 4. screen < 768px === */
+@media (max-width: 767px) {
+    .left_sidebar {
+        display: none;
+    }
+
+    .side_menu {
+        display: none;
+    }
+
+    .content_container {
+        margin-left: 0;
+    }
+}
