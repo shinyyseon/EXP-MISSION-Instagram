@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/side.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/story.css">
 </head>
 <body>
     <header class="header">
@@ -96,7 +97,7 @@
                                     <img alt="무료 Photo 귀여운 인공 지능 생성 만화 토끼" fetchpriority="high" decoding="async" data-nimg="1" class="$block $rounded $object-cover  $object-center $h-auto $w-full" style="color:transparent" src="https://img.freepik.com/free-photo/cute-ai-generated-cartoon-bunny_23-2150288884.jpg?ga=GA1.1.1519145777.1743998646&amp;semt=ais_hybrid&amp;w=740">
                                 </div>
                             </div>
-                                <span class="story_user">user1</span>
+                                <span class="story_user" id="storyUser">user1</span>
                         </button>
 
                         <button class="story">
@@ -381,6 +382,35 @@
             </div>
         </section>
     </main>
+
+    <div class="story-modal" id="storyModal" style="display: none;">
+        <div class="modal-content">
+            <div class="story-header">
+                <img class="story-profile" src="" alt="profile">
+                <span class="story-username" id="modalUser">user</span>
+                <span class="story-time">1시간</span>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+
+            <div class="story-display">
+                <div class="story-progress"></div>
+                <div class="story-slide-wrapper">
+                    <img class="story-slide" src="" alt="Story">
+                </div>
+            </div>
+
+            <div class="story-footer">
+                <input type="text" class="story-input" placeholder="user에게 메시지를 보내기...">
+                <button class="send-button">&#x27A4;</button>
+            </div>
+
+            <button class="story-nav prev" id="prevStory">&#10094;</button>
+            <button class="story-nav next" id="nextStory">&#10095;</button>
+        </div>
+    </div>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

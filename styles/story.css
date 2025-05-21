@@ -1,0 +1,164 @@
+body.modal-open {
+    overflow: hidden;
+}
+
+.story-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.story-profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.story-username {
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 15px;
+}
+
+.story-time {
+    font-size: 13px;
+    color: #aaa;
+    margin-right: 8px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.story-display {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.story-slide-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    display: flex;
+    gap: 2px;
+    z-index: 1;
+}
+
+.story-progress div {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.story-progress div.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+    animation: progressBar 5s linear forwards;
+}
+
+@keyframes progressBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.story-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.story-input {
+    flex: 1;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.story-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.story-nav.prev {
+    left: 10px;
+}
+
+.story-nav.next {
+    right: 10px;
+}

@@ -33,12 +33,6 @@
     position: relative;
 }
 
-@media (min-width: 768px) {
-    .header_search {
-        display: flex;
-    }
-}
-
 .header_search img {
     width: 12px;
     height: 12px;
