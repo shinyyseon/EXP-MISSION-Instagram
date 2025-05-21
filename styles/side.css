@@ -1,10 +1,12 @@
 .side_menu {
     max-width: 290px;
     width: 100%;
+    margin-right: 32px;
     margin-left: 32px;
     display: none;
     flex-direction: column;
     position: relative;
+    margin-top: 35px;
 }
 
 .side_menu_user_profile {
@@ -184,10 +186,12 @@
 }
 
 .left_sidebar {
-    margin-top: 35px;
+    padding-top: 35px;
     width: 240px;
     flex-shrink: 0;
     flex-direction: column;
+    top: 0;
+    border-right: 1px solid #dbdbdb;
 }
 
 .left_sidebar_nav {
@@ -232,5 +236,5 @@
     z-index: 2;
 }
 .sidebar_logo img {
-    margin-right: 16px;
+    margin-left: 10px;
 }

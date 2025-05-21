@@ -2,7 +2,6 @@
 @media (min-width: 1264px) {
     .left_sidebar {
         display: flex;
-        width: 240px;
     }
 
     .left_sidebar_nav a span {
@@ -14,17 +13,10 @@
     }
 
     .side_menu {
-        display: flex;
-        flex-direction: column;
-        width: 290px;
-        position: sticky;
-        top: 84px;
-        margin-left: 32px;
-        flex-shrink: 0;
+        display: block;
     }
 
     .content_container {
-        margin-left: 240px;
     }
     .header {
         display: none;
@@ -48,6 +40,7 @@
 
     .side_menu {
         display: flex;
+        margin-left: 72px;
     }
 
     .content_container {
@@ -60,6 +53,16 @@
 
     .main_container {
         margin-top: 0;
+    }
+
+    .logo_img {
+
+    }
+}
+
+@media (max-width: 1160px) {
+    .side_menu {
+        display: none;
     }
 }
 
