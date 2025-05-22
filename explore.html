@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/explore.css">
+    <link rel="stylesheet" href="styles/search.css">
 </head>
 <body>
     <main class="main_container">
@@ -19,7 +20,7 @@
             </div>
             <nav class="left_sidebar_nav">
                 <a href="index.html"><img src="assets/icons/home.svg" alt="Home"><span>홈</span></a>
-                <a href="#">
+                <a href="#" class="search_tab">
                     <svg aria-label="검색" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>검색</title><path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="16.511" x2="22" y1="16.511" y2="22"></line></svg>
                     <span>검색</span>
                 </a>
@@ -99,7 +100,23 @@
             </div>
         </div>
     </div>
-    <script src="explore.js"></script>
-    <script src="default.js"></script>
+
+    <div class="search-panel" id="searchPanel">
+        <div class="search-header">
+            <h2>검색</h2>
+            <input type="text" placeholder="검색" class="search-input">
+        </div>
+        <div class="search-body">
+            <p class="recent-title">최근 검색 항목</p>
+            <ul class="recent-list" id="recentList">
+                <li>예: user_name</li>
+            </ul>
+            <p class="no-recent" id="noRecent">최근 검색 내역 없음.</p>
+        </div>
+    </div>
+
+    <script src="scripts/explore.js"></script>
+    <script src="scripts/default.js"></script>
+    <script src="scripts/search.js"></script>
 </body>
 </html>

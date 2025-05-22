@@ -23,8 +23,8 @@ function Search() {
         searchPanel.style.display = "block";
         sidebar.classList.add("sidebar--collapsed");
         logo_img.innerHTML = `
-            <a href="index.html">
-                <img src="assets/icons/small_logo.svg" alt="logo" class="logo_img" />
+            <a href="../index.html">
+                <img src="../assets/icons/small_logo.svg" alt="logo" class="logo_img" />
             </a>`;
     });
 
@@ -37,8 +37,8 @@ function Search() {
             sidebar.classList.remove("sidebar--collapsed");
             if (width >= 1264) {
                 logo_img.innerHTML = `
-                <a href="index.html">
-                    <img src="assets/icons/logo.svg" alt="logo" class="logo_img" />
+                <a href="../index.html">
+                    <img src="../assets/icons/logo.svg" alt="logo" class="logo_img" />
                 </a>`;
             }
             renderRecentSearch();
